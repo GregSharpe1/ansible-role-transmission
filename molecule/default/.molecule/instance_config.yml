@@ -1,0 +1,8 @@
+# Molecule managed
+
+---
+- address: 127.0.0.1
+  identity_file: /home/greg/git/personal/plex/ansible-role-transmission/molecule/default/.molecule/.vagrant/machines/instance-1-default/virtualbox/private_key
+  instance: instance-1-default
+  port: '2222'
+  user: ubuntu

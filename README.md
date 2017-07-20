@@ -1,2 +1,2 @@
 # ansible-role-transmission
-My version of tranmission
+Ansible role to install and configure Transmission on Linux

@@ -1,0 +1,24 @@
+---
+
+- name: Install Transmission
+  apt:
+    name: transmission-daemon
+    state: present
+
+- name: Make sure transmission is not running
+  service:
+    name: transmission-daemon
+    state: stopped
+  ignore_errors: true
+
+- name: Copy over the configuration needed
+  template:
+    src: settings.json.j2
+    dest: "{{ transmission_dir }}/settings.json"
+
+- name: Start transmission
+  service:
+    name: transmission-daemon
+    state: started
+  ignore_errors: true
+  tags: transmission

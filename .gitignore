@@ -1,0 +1,8 @@
+*.pyc
+
+# Molecule stuff
+molecule/default/.molecule/.vagrant/*
+molecule/default/.cache/*
+.cache/*
+molecule/default/*.log
+molecule/default/*.rst

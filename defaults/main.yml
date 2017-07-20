@@ -1,0 +1,7 @@
+transmission_dir: /etc/transmission-daemon/
+transmission_download_dir: /mnt/downloads
+transmission_complete_download_dir: "{{ transmission_download_dir }}/complete"
+transmission_incomplete_download_dir: "{{ transmission_download_dir }}/incomplete"
+transmission_port: 9091
+transmission_password: "grneno43896lnwern!"
+transmission_username: "transmission"
